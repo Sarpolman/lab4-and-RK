@@ -1,0 +1,6 @@
+C:\Users\Артём\Desktop\C#\Biblioteka\Biblioteka\bin\Debug\Biblioteka.dll
+C:\Users\Артём\Desktop\C#\Biblioteka\Biblioteka\bin\Debug\Biblioteka.pdb
+C:\Users\Артём\Desktop\C#\Biblioteka\Biblioteka\obj\Debug\Biblioteka.dll
+C:\Users\Артём\Desktop\C#\Biblioteka\Biblioteka\obj\Debug\Biblioteka.pdb
+C:\Users\Артём\Desktop\C#\Biblioteka\Biblioteka\obj\Debug\Biblioteka.csprojAssemblyReference.cache
+C:\Users\Артём\Desktop\C#\Biblioteka\Biblioteka\obj\Debug\Biblioteka.csproj.CoreCompileInputs.cache
