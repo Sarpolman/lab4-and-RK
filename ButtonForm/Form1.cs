@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using Biblioteka;
 
 namespace ButtonForm
 {
@@ -55,6 +56,7 @@ namespace ButtonForm
             {
                 textBox1.Text+= word+" "; 
             }
+            label8.Text = listofwords.Count().ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -132,6 +134,38 @@ namespace ButtonForm
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            string matchword = textBox3.Text;
+            int maxdistance;
+            if (!Int32.TryParse(textBox2.Text, out maxdistance))
+            {
+                MessageBox.Show(
+                    "Введите максимальное расстояние"
+                    );
+            }
+            else {
+                foreach (string word in listofwords)
+                {
+                    if (Biblioteka.Levenstein.distance(matchword, word) <= maxdistance)
+                    {
+                        listBox1.Items.Add(Biblioteka.Levenstein.WriteDistance(matchword, word));
+                    }
+                }
+            }
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
